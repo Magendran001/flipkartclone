@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header_component_each_list{
+    height: 100px;
+ 
+    
+  
+
+}
+.header_component_each_list img{
+   
+   height: 60%;
+   width: 70px;
+   
+  
+
+}
+.header_component_each_list>p{
+   
+    height: 20%;
+    border: 2px solid red !important;
+    position: relative;
+ 
+ }
+
+.hover_tool_tip_title>div{
+   
+    visibility: hidden;
+}
+.hover_tool_tip_title:hover>div{
+   
+   
+    visibility: visible;
+    
+   
+}

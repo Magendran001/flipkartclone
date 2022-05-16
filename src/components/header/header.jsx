@@ -2,8 +2,14 @@ import "./header.css";
 import "../commoncss/common.css";
 import flipkartlogo from "../../assets/images/flipkartlogo.png";
 import { SearchOutlined,ShoppingCartOutlined  } from "@ant-design/icons";
+import { useState } from "react";
+import header_obj from "./header_sub_components_array";
+import Headerlist from "./header_list";
 function Header()
 {
+            // header obj is array of obj in  header part {Top offers to Beauty,toys}
+    let [header_sub_components,setheader_sub_components] =useState(header_obj);
+
     return (<div >
         <div className="header_part1_whole_div">
         <div className="header_part_1 center_of_div" >
@@ -22,6 +28,11 @@ function Header()
             <div className="header_more">More</div>
             <div className="header_cart_whole"><span><ShoppingCartOutlined /></span><span>Cart</span></div>
         </div>
+        </div>
+        <div className="header_sub_components">
+            <div>
+            {header_sub_components.map((e)=>{return <Headerlist data={e}/>})}
+            </div>
         </div>
     </div>)
 }

@@ -73,3 +73,15 @@
 .header_more{
     font-size: 16px;
 }
+.header_sub_components{
+    
+}
+.header_sub_components>div{
+    padding: 9px;
+    margin: auto;
+    width: 85%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
