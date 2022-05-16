@@ -2,7 +2,8 @@
     
     position: absolute;
     /* border: 2px solid green; */
-     left: -200px;
+    left: -200px;
+    
 
     
 }
@@ -13,6 +14,7 @@
 .total_tip_total_part_flex{
     display: flex;
     margin-top: 20px;
+    border: 1px solid red;
     
 }
 .total_tip_total_part_flex>div{
@@ -20,6 +22,7 @@
     border: 1px solid red;
     padding: 10px;
     width: 200px;
+   
 }
 .total_tip_total_part_flex>div p{
    

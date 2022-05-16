@@ -60,7 +60,17 @@ const header_obj = [{
     tooltip: true,
 }
 
+];
+
+const fashion = [{
+    categories: "Men's Top Wear",
+    subcategories: [{ title: "All", title: "Mens' T-shirts", title: "Mens' Causual Shirts", title: "Mens' Formal Shirts", title: "Mens' Kurtas", title: "Mens' Ethnic sets", title: "Mens' Blazers", title: "Mens' Raincoat", title: "Mens' Windcheaters", title: "Mens' Suit", title: "Mens' Fabrics" }]
+},
+{ categories: "Men's Bottom Wear" },
+{ categories: "Women' Ethnic " }
+
 ]
+export { fashion }
 
 
 export default header_obj

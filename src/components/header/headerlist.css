@@ -4,6 +4,8 @@
 }
 .header_component_each_list{
     height: 100px;
+    position: relative;
+
  
     
   
@@ -14,25 +16,40 @@
    height: 60%;
    width: 70px;
    
+   
   
 
 }
-.header_component_each_list>p{
+.header_component_each_list>a{
    
-    height: 20%;
-    border: 2px solid red !important;
-    position: relative;
+   text-decoration: none;
+   color: black;
  
  }
 
 .hover_tool_tip_title>div{
    
     visibility: hidden;
+    
 }
 .hover_tool_tip_title:hover>div{
    
    
-    visibility: visible;
+    
     
    
+}
+.header_component_each_list:hover .hover_tool_tip_title>div{
+
+    visibility: visible;
+    
+
+}
+
+.header_component_each_list:hover span{
+
+    
+    transform: rotate(-180deg);
+    
+
 }
