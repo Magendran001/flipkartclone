@@ -31,14 +31,9 @@
    
     visibility: hidden;
     
-}
-.hover_tool_tip_title:hover>div{
-   
-   
     
-    
-   
 }
+
 .header_component_each_list:hover .hover_tool_tip_title>div{
 
     visibility: visible;

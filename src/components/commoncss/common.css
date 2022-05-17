@@ -4,3 +4,12 @@
    
    
 }
+
+.link_nodecoration{
+    text-decoration: none;
+    color: black;
+}
+.link_nodecoration:hover{
+    
+    color: blue;
+}
