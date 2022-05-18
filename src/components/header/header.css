@@ -8,8 +8,10 @@
     
 }
 .flipkart_whole_header_div{
-  
+    width: 100%;
     
+  
+    border: 1px solid red;
 }
 .header_part_1>div{
     
@@ -30,7 +32,10 @@
 }
 .header_part1_whole_div{
     width: 100%;
+    overflow: hidden;
     background-color: hsl(217,86%,54%);
+    box-sizing: border-box;
+   
   
     
 }

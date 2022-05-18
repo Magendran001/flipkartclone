@@ -3,3 +3,9 @@
     width: 100%;
     height: 1000px;
 }
+.Deals_of_the_day_with_add{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 85% 15%;
+
+}
