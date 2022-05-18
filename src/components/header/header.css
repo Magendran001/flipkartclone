@@ -7,6 +7,10 @@
    align-items: center;
     
 }
+.flipkart_whole_header_div{
+  
+    
+}
 .header_part_1>div{
     
     
@@ -21,6 +25,8 @@
     margin-top: 0px;
     position: sticky;
     top: opx;
+    
+    
 }
 .header_part1_whole_div{
     width: 100%;
@@ -74,6 +80,7 @@
     font-size: 16px;
 }
 .header_sub_components{
+    background-color: #fff;
     
 }
 .header_sub_components>div{

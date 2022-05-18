@@ -10,7 +10,7 @@ function Header()
             // header obj is array of obj in  header part {Top offers to Beauty,toys}
     let [header_sub_components,setheader_sub_components] =useState(header_obj);
 
-    return (<div >
+    return (<div className="flipkart_whole_header_div" >
         <div className="header_part1_whole_div">
         <div className="header_part_1 center_of_div" >
             <div className="flipkart_logo_part">

@@ -1,14 +1,18 @@
 .total_tip_total_part{
     
     position: absolute;
-    /* border: 2px solid green; */
+    
     left: -200px;
+    
+    z-index: 4;
     
 
     
 }
 .total_tip_total_part>div{
     
+    z-index: 4;
+    background-color: white;
 
 }
 .total_tip_total_part_flex{
