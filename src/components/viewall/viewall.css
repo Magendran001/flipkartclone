@@ -4,22 +4,25 @@
     height: 60px;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 20px;
     align-items: center;
     box-sizing: border-box;
     font-family: Roboto, Arial, sans-serif;
     font-weight: 500;
     font-size: 22px;
     line-height: 32px;
+    
    
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.flipkart_view_all_whole button{
+.flipkart_view_all_whole a{
     width: 100px;
     height: 40px;
-    background-color: rgb(5, 5, 138);
+    background-color: royalblue;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    font-size: 15px;
 }

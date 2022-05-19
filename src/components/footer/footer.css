@@ -1,0 +1,77 @@
+.Flipkart_footer_whole_part{
+    
+    width: 100%;
+    height: 500px;
+    padding: 30px 30px 0px;
+    background-color: hsl(217,41%,15%);
+    box-sizing: border-box;
+    display: grid;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+.Flipkart_footer_div1,.Flipkart_footer_div2{
+    
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.Flipkart_footer_div1{
+    height: 300px;
+    text-align: start;
+   
+
+}
+.Flipkart_footer_div1>div{
+    /* border: 1px solid red; */
+    flex: 1;
+    margin: 0px 10px;
+    
+}
+.Flipkart_footer_div2{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+   
+}
+.middel_code_footer{
+    border-top: 1px solid gray;
+    width: 104%;
+    margin: auto;
+    position: relative;
+    left: -30px;
+    
+    box-sizing: border-box;
+   
+}
+.Flipkart_footer_div1 a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 10px 0px;
+    
+}
+.Flipkart_footer_div1_Each_title{
+    color: #878787;
+    font-size: 12px;
+    line-height: 17px;
+    
+}
+.Flipkart_footer_div1_Each_title+p>span{
+    color: blue;
+}
+.Flipkart_footer_div1 p{
+   line-height: 20px;
+   
+    
+}
+
+.Flipkart_footer_div1_Each_title+p{
+    color: white;
+}

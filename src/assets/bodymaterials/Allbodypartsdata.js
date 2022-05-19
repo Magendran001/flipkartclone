@@ -51,4 +51,33 @@ const Deals_of_the_day = [
 
 ]
 
-export {Deals_of_the_day}
+const Deals_title = {
+    title: "Deals of the Day",
+    path: "/dealsoftheday"
+}
+const Trending_title = {
+    title: "Trending Offers",
+    path: "/trendingoffers"
+}
+const Topdealsfashion_title = {
+    title: "Top Deals On Fashion",
+    path: "/topdealsfashion"
+}
+const Best_price_title = {
+    title: "Best Price On Fashion",
+    path: "/bestpricefashion"
+}
+const Top_fashion_title = {
+    title: "Top Fashion Styles",
+    path: "/topfashionstyle"
+}
+const Best_Electronics_title = {
+    title: "Best of Electronics",
+    path: "/bestelectronics"
+}
+const Toys_stationary_title = {
+    title: "Toys and Stationary",
+    path: "/toysstationary"
+}
+
+export { Deals_of_the_day, Trending_title, Toys_stationary_title, Best_Electronics_title, Top_fashion_title, Best_price_title, Topdealsfashion_title, Deals_title }
