@@ -4,7 +4,7 @@ import "./commonslider.css"
 import { Deals_of_the_day } from "../../assets/bodymaterials/Allbodypartsdata";
 
 const Commonslider=({data})=> {
-    console.log(data,"jjjjjjjjjjjjjjjjjj")
+    // console.log(data,"jjjjjjjjjjjjjjjjjj")
   
     const settings = {
       

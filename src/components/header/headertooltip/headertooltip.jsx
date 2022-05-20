@@ -18,8 +18,8 @@ function Headertooltip({data})
     let Fashion = data;
     
     //   selector value is nothing but array of obj used for tooltip second show realted more
-     let Selector = useSelector((store)=>{return store.tooltipsubcategories})||Fashion[0];
-     console.log(Selector,"selector222")
+     let Selector = useSelector((store)=>{return store.categoriesreducer.tooltipsubcategories})||Fashion[0];
+    //  console.log(Selector,"selector222")
      
      
           
@@ -82,9 +82,8 @@ function Secontool({data})
 {
     
     
-    //  
-    // data.map((e)=>{console.log(e)})
-    // console.log(typeof([]))
+     
+    
    
     //  console.log(data,"secondtooltip")
  

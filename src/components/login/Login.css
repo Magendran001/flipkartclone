@@ -1,0 +1,161 @@
+.Whole_login_part_of_flipkart{
+    border: 1px solid red;
+    width: 700px;
+    height: 500px;
+    
+    position: absolute;
+    z-index: 1;
+    /* background-color: white; */
+    visibility: hidden;
+    /* visibility: hidden; */
+
+
+    /* background:
+    
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    );
+    */
+  
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+
+}
+.Whole_login_part_of_flipkart_inside{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+.Whole_login_part_of_flipkart_inside>div{
+   
+    padding: 30px;
+    box-sizing: border-box;
+    
+}
+.Whole_login_part_of_flipkart_inside>div:nth-child(2){
+    
+    background-color: hsl(217,86%,54%);
+    
+    
+}
+.Whole_login_part_of_flipkart_inside>div:nth-child(1){
+   padding: 0px;
+    
+    
+}
+
+.Whole_login_part_of_flipkart_inside>div:nth-child(3){
+    
+    background-color:white
+    
+}
+
+.login_close_btn{
+   
+    position: absolute;
+    right: -30px;
+    font-size: 30px;
+    background-color: none;
+    font-weight: lighter;
+   
+}
+.fa fa-close{
+    /* color: white; */
+}
+
+.Whole_login_part_of_flipkart_hidden{
+    visibility: hidden;
+}
+.Whole_login_part_of_flipkart_visible{
+    visibility: visible;
+   
+    width: 700px;
+    height: 500px;
+    
+    position: absolute;
+    z-index: 1;
+    /* background-color: white; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.Login_hover_part_1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+.Login_hover_part_1>div h2{
+    margin: 20px;
+    /* color: white; */
+    font-size: 25px;
+    
+ }
+ .Login_hover_part_1_h2_p1>h2{
+    color: white;
+ }
+ .Login_hover_part_2{
+     
+     /* display: grid;
+     justify-content: space-between; */
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+ .Login_hover_part_2>div:first-child{
+   
+    /* display: grid;
+    justify-content: space-between; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Login_hover_part_2>div>div{
+    margin: 10px 0px;
+}
+ .Login_hover_part_2 input{
+    width: 100%;
+    
+    height: 30px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    border-bottom:1px solid gainsboro ;
+}
+.Login_hover_part_2 button{
+    width: 100%;
+   
+    height: 50px;
+}
+.Login_hover_part_2 button:hover{
+    cursor: pointer;
+}
+.p_login_tag{
+    color: white;
+    font-size: 18px;
+}
+.Login_flipkart_orange{
+    background-color: hsl(19,96%,54%);
+    color: white;
+    border: none;
+}
+.request_flipkart_otp{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    color: blue;
+    background: white;
+    border: none;
+}
+.new_to_flipkart_user{
+    color: blue;
+}
+.new_to_flipkart_user:hover{
+    cursor: pointer;
+}
