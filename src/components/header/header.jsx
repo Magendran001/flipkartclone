@@ -2,7 +2,7 @@ import "./header.css";
 import "../commoncss/common.css";
 import flipkartlogo from "../../assets/images/flipkartlogo.png";
 import { SearchOutlined,ShoppingCartOutlined  } from "@ant-design/icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import header_obj from "./header_sub_components_array";
 import Headerlist from "./header_list";
 import Login from "../login/login";
@@ -11,14 +11,45 @@ import { useDispatch, useSelector } from "react-redux";
 
 function Header()
 {
+    const  loginlocalstoragedata  = JSON.parse(localStorage.getItem("userdetails"));  
+    const selector = useSelector((Store=>Store.loginreducer.loginclick)); 
+    console.log(selector,"selecctorkikkkkkkkkkkk")
+     
+    
+    
+    const [checkedlogin,setcheckedlogin] = useState(false)
+    
+    useEffect(()=>{
+
+
+        if(loginlocalstoragedata._id)
+        {
+            setcheckedlogin(true)
+        }
+
+    },[selector])
+
+   
      const dispatch = useDispatch();
-     const selector = useSelector((Store=>Store))
+     
+    
          const Logindispatch =()=>{
+
+            
              console.log("yes")
 
             dispatch(Loginclickfun(true));
             console.log(selector)
+             
+
+         }
+         const Logoutdispatch=()=>{
+
+            localStorage.setItem("userdetails",JSON.stringify(""));
+            console.log(selector)
             
+            setcheckedlogin(false)
+            dispatch(Loginclickfun(false));
 
          }
 
@@ -37,7 +68,7 @@ function Header()
                  <span className="search_icon"><SearchOutlined /></span>
             </div>
             <div >
-                <button onClick={Logindispatch} className="header_login_btn">Login</button>
+              {checkedlogin?<button onClick={Logoutdispatch} className="header_login_btn">Logout</button>:<button onClick={Logindispatch} className="header_login_btn">Login</button>}
             </div>
             <div className="become_a_seller">Become a seller</div>
             <div className="header_more">More</div>
