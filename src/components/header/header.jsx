@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 function Header()
 {
-    const  loginlocalstoragedata  = JSON.parse(localStorage.getItem("userdetails"));  
+    const  loginlocalstoragedata  = JSON.parse(localStorage.getItem("userdetails"))||{};  
     const selector = useSelector((Store=>Store.loginreducer.loginclick)); 
     console.log(selector,"selecctorkikkkkkkkkkkk")
      
@@ -21,8 +21,11 @@ function Header()
     
     useEffect(()=>{
 
+        
 
-        if(loginlocalstoragedata._id)
+           let flag = loginlocalstoragedata._id?true:false;
+           console.log(flag,"flaggg")
+        if(flag)
         {
             setcheckedlogin(true)
         }

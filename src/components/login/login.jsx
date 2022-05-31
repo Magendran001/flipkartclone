@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Loginclickfun } from "../../redux/login/action";
 import axios from "axios"
 import "./Login.css";
+import SubmitLoginreducer from "../../redux/submitlogin/submitloginreducer";
 
 
 
@@ -40,40 +41,40 @@ function Login()
 
       }
 
-     const Submitlogin =async()=>{
+     const Submitlogin =()=>{
 
-        setloginloading(true)
+        // setloginloading(true)
  
-        axios.post("http://localhost:9876/login",{...loginobj})
-        .then((res)=>{
-            console.log(res.data,"res.data")  
+        // axios.post("http://localhost:9876/login",{...loginobj})
+        // .then((res)=>{
+        //     console.log(res.data,"res.data")  
             
-            if(res.data.message)
-            {
-                alert(res.data.message)
-            }
-            else if(res.data._id)
-            {
-                localStorage.setItem("userdetails",JSON.stringify(res.data));
-                dispatch(Loginclickfun(false))
+        //     if(res.data.message)
+        //     {
+        //         alert(res.data.message)
+        //     }
+        //     else if(res.data._id)
+        //     {
+        //         localStorage.setItem("userdetails",JSON.stringify(res.data));
+        //         dispatch(Loginclickfun(false))
 
-            }
-        })
-        .catch((err)=>{
-            console.log(err.response.data)
-            let errors = err.response.data.errors[0].msg;
-            if(errors)
-            {
-                alert("Enter valid username and password")
-            }
+        //     }
+        // })
+        // .catch((err)=>{
+        //     console.log(err.response.data)
+        //     let errors = err.response.data.errors[0].msg;
+        //     if(errors)
+        //     {
+        //         alert("Enter valid username and password")
+        //     }
 
-        })
-        .finally(()=>{
-            setloginloading(false)
-        })
+        // })
+        // .finally(()=>{
+        //     setloginloading(false)
+        // })
         
 
-      
+      dispatch(SubmitLoginreducer(loginobj))
 
        
          
